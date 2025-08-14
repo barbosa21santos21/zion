@@ -8,6 +8,31 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Botão flutuante do WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: #fff;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 28px;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.2s ease-in-out;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            background-color: #20b85d;
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -24,6 +49,7 @@
                     <li><a href="#comparativo">Comparativo</a></li>
                     <li><a href="#calculadora">Calculadora</a></li>
                     <li><a href="https://qjh9iec57mpv.manussite.space/" class="btn-cta">Meu Painel</a></li>
+                    <li><a href="https://wa.me/5533991922598?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20investir%20na%20ZYON%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" class="btn-cta">Falar com Consultor</a></li>
                     <li><a href="#contato" class="btn-cta">Investir Agora</a></li>
                 </ul>
                 <div class="hamburger">
@@ -61,18 +87,6 @@
                 <div class="hero-cta">
                     <a href="#calculadora" class="btn btn-primary">Simular Investimento</a>
                     <a href="#cotas" class="btn btn-secondary">Ver Cotas</a>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="investment-card">
-                    <div class="card-header">
-                        <h3>Seu Investimento</h3>
-                        <i class="fas fa-coins"></i>
-                    </div>
-                    <div class="card-body">
-                        <div class="amount">R$ 15.000</div>
-                        <div class="period">36 meses</div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -272,7 +286,8 @@
                         <i class="fas fa-calculator"></i>
                         Solicitar Simulação
                     </a>
-                    <a href="#" class="btn btn-secondary btn-large" id="falar-consultor">
+                    <a href="https://wa.me/5533991922598?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20investir%20na%20ZYON%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." 
+                       class="btn btn-secondary btn-large" target="_blank">
                         <i class="fas fa-comments"></i>
                         Falar com Consultor
                     </a>
@@ -280,6 +295,12 @@
             </div>
         </div>
     </section>
+
+    <!-- Botão Flutuante WhatsApp -->
+    <a href="https://wa.me/5533991922598?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20investir%20na%20ZYON%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." 
+       class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <!-- Footer -->
     <footer class="footer">
